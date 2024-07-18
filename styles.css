@@ -1,0 +1,43 @@
+body {
+    background-color: #86A1E0;
+    text-align: center;
+    font-family: cursive;
+    color: #2C73D2;
+    font-size: medium;
+}
+
+img {
+    border-radius: 30px;
+}
+
+h1 {
+    font-style: italic;
+    color: #2C73D2;
+}
+
+.modal {
+    display: none;
+    /* Escondido por defecto */
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modal-dialog {
+    width: auto;
+    margin: 1.75rem auto;
+    text-align: center;
+}
+
+.modal-content {
+    width: 100%;
+    pointer-events: auto;
+    background-color: #C4FCEF;
+    background-clip: padding-box;
+}
+
+.moving-image{
+    transition: left 0.5s
+}

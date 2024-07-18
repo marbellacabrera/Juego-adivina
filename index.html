@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina mi número</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1 class="text-center">Adivinaré el número que piensas...</h1>
+    <div class="container mt-5">
+        <img src="./img/adivina0.png" alt="Adivina">
+        <div id="message" class="text-center mt-4"></div>
+        <div class="text-center mt-4">
+            <button id="startButton" class="btn btn-info">Comenzar el juego</button>
+            <div id="gameArea" class="mt-4" style="display:none;">
+                <p id="question" class="mt-4"></p>
+                <button id="yesButton" class="btn btn-success">Sí</button>
+                <button id="noButton" class="btn btn-danger">No</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<div id="confirmDialog" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>¿Tu número es mayor que este?</p>
+            </div>
+            <div class="modal-footer">
+                <button id="customYesButton" class="btn btn-success">Sí</button>
+                <button id="customNoButton" class="btn btn-danger">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script defer src="script.js"></script>
+
+</html>
